@@ -77,7 +77,7 @@ function App() {
             {LETTER_THRESHOLDS.map(({ letter, value }) => (
               <tr key={letter}>
                 <td>{letter}</td>
-                <td>{letter === 'F' ? '-' : computeNeeded(value)}</td>
+                <td>{letter === 'F' ? computeNeeded(60.5) : computeNeeded(value)}</td>
               </tr>
             ))}
           </tbody>
