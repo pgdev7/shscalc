@@ -1,6 +1,8 @@
 // Core calculator component (replaced the default Vite placeholder)
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+// Web Analytics from Vercel
+import { inject } from '@vercel/analytics';
 
 const LETTER_THRESHOLDS = [
   { letter: 'A+', value: 97 },
@@ -19,6 +21,11 @@ const LETTER_THRESHOLDS = [
 ];
 
 function App() {
+  // initialize Vercel Web Analytics once on the client
+  useEffect(() => {
+    inject();
+  }, []);
+
   const [q3, setQ3] = useState('');
   const [q4, setQ4] = useState('');
 

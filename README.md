@@ -2,6 +2,10 @@
 
 This project is a simple **Vite + React** application that calculates the final exam grade you need based on your Q3 and Q4 grades. It was bootstrapped with `npx create-vite --template react`, then the grade calculator logic and styles were added on top.
 
+The app also includes Vercel Web Analytics; the tracking script is injected automatically when the app loads (see `src/App.jsx`).
+
+Analytics are controlled via the Vercel dashboard – make sure the project is deployed and Web Analytics is enabled to see traffic data.
+
 If you experimented with a secondary folder (e.g. `scr2`), delete that folder and use the `src` directory which already contains the latest code. (It is already listed in `.gitignore` so it won't be tracked.)
 
 ## Getting Started
